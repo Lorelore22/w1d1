@@ -216,3 +216,35 @@ age = "28"; // -> string
 age.length; // 2
 
 age = null;
+
+const schoolName = "Ironhack";
+
+// age = 20;
+
+age = 65;
+
+if (age >= 60) {
+  console.log("You are a senior driver");
+}
+
+if (age >= 18) {
+  console.log("You can apply for a driving license");
+} else if (age === 16 || age === 17) {
+  console.log("You can apply for accompanied driving license in France");
+} else {
+  console.log("You are too young to drive");
+}
+
+// while
+
+let counter = 1;
+while (counter <= 100) {
+  console.log(counter);
+  counter += 1;
+}
+// ------------ 0 1 2 3 4 5 6 7
+schoolName; // "I r o n h a c k"
+
+for (let i = 0; i < schoolName.length; i += 2) {
+  console.log(schoolName[i]);
+}
