@@ -169,3 +169,50 @@ city[0]; // 'l'
 city = city[0].toUpperCase() + city.slice(1);
 
 // Strings and all the primitives are immutable
+
+// Boolean
+typeof true; // "boolean"
+typeof false; // "boolean"
+
+// A Boolean expression is an expression that results in a boolean (true or false)
+5 > 3; // true
+0 <= -1; // false
+8 === 4 * 2; // true
+
+greeting === "Goodbye"; // false
+greeting === "Hello"; // true
+greeting !== "Hello"; // false
+
+// OR || operator
+// the OR operator will evaluate to the first truthy expression if there is one, or the last falsy expression if there is no truthy expression
+
+true || false; // true
+true || true; // true
+false || true; // true
+false || false; // false
+false || false || true; // true
+false || true || false; // true
+
+// AND && operator
+// the AND operator will evaluate to the last truthy expression if they all are, or the to the first falsy expression of there is one
+true && false; // false
+true && true; // true
+false && true; // false
+false && false; // false
+false && false && true; // false
+
+// NOT ! operator
+!false; // true
+!true; // false
+!(1 > 4); // true -> it is true that 1 is not greater than 4
+
+// undefined
+
+let passportNumber;
+passportNumber; // undefined
+age; // 28 -> number
+age.length; // undefined
+age = "28"; // -> string
+age.length; // 2
+
+age = null;
